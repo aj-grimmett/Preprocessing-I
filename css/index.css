@@ -1,1 +1,312 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+header {
+  background-image: url(https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+header img {
+  width: 250px;
+  padding: 1% 4%;
+  border-radius: 50%;
+}
+header h1 {
+  padding: 0%;
+  font-size: 4.5rem;
+}
+header nav {
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header nav a {
+  padding: 4% 5%;
+  font-size: 1.5rem;
+  color: #000080;
+}
+@media (max-width: 500px) {
+  header nav a {
+    color: white;
+  }
+}
+h2 {
+  font-size: 2.2rem;
+}
+p {
+  font-size: 1.8rem;
+}
+li {
+  font-size: 1.3rem;
+  list-style-type: disc;
+  padding: 1%;
+}
+.first {
+  padding: 0% 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #F5DEB3;
+}
+@media (max-width: 500px) {
+  .first {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.first .Personal {
+  background-color: #87CEFA;
+  padding: 4%;
+}
+@media (max-width: 500px) {
+  .first .Personal {
+    width: 100%;
+  }
+}
+.first .Personal p {
+  padding: 3% 6%;
+  line-height: 1.6;
+}
+@media (max-width: 515px) {
+  .first .Personal p {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 5% 14% 5% 0%;
+  }
+}
+.first #skills {
+  background-color: #556B2F;
+  padding: 6%;
+}
+@media (max-width: 500px) {
+  .first #skills {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
+.first #skills li {
+  padding: 5%;
+  font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  .first #skills li {
+    font-size: 1.3rem;
+  }
+}
+.second {
+  padding: 0% 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #F5DEB3;
+}
+@media (max-width: 500px) {
+  .second {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.second #history {
+  background-color: #87CEFA;
+  padding: 2% 16% 4%;
+}
+@media (max-width: 500px) {
+  .second #history {
+    width: 100%;
+    background-color: #556B2F;
+  }
+}
+.second #history li {
+  padding: 5%;
+  font-size: 1.7rem;
+}
+.second #contact {
+  background-color: #556B2F;
+  padding: 2% 19.5% 4%;
+}
+@media (max-width: 500px) {
+  .second #contact {
+    width: 100%;
+    background-color: #87CEFA;
+  }
+}
+.second #contact li {
+  padding: 5% 0%;
+  font-size: 1.7rem;
+}
+.third {
+  background-color: #F5DEB3;
+  padding: 3%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .third {
+    width: 100%;
+    padding: 0%;
+  }
+}
+.third h2 {
+  font-size: 2.3rem;
+}
+.third li {
+  list-style-type: none;
+  font-size: 1.6rem;
+}
+.third .ed {
+  background-color: #87CEFA;
+  padding: 10%;
+}
